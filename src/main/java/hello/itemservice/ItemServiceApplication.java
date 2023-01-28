@@ -4,7 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ItemServiceApplication {
+public class ItemServiceApplication{
+//public class ItemServiceApplication implements WebMvcConfigurer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ItemServiceApplication.class, args);
@@ -18,6 +19,14 @@ public class ItemServiceApplication {
 //		messageSource.setBasenames("messages", "errors");  //resources 밑에 있는 messages.properties파일을 읽는다.
 //		messageSource.setDefaultEncoding("utf-8");
 //		return messageSource;
+//	}
+
+
+//	Validator 글로벌 설정 - 모든 컨트롤러
+//	글로벌 설정을 하면 BeanValidator가 자동 등록되지 않기에, 글로벌 설정을 직접 사용하는 경우는 드물다.
+//	@Override
+//	public Validator getValidator() {
+//		return new ItemValidator();
 //	}
 
 }
